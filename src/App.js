@@ -5,11 +5,13 @@ import Dashboard from "./components/dashboard/Dashboard";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
 import CreatePost from "./components/posts/CreatePost";
+import AuthProvider from './components/auth/AuthProvider';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <AuthProvider>
         <Navbar />
         <Switch>
           <Route exact path='/' component ={Dashboard} />
@@ -17,6 +19,7 @@ function App() {
           <Route  path='/signup' component ={SignUp} />
           <Route  path='/create/:id' component ={CreatePost} />
         </Switch>
+        </AuthProvider>
       </div>
     </BrowserRouter>
   );

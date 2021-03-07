@@ -30,6 +30,7 @@ nav>a{
   color: yellow;
   font-size: 1.5rem;
   margin-left:30px;
+  cursor: pointer;
 }
 
 .form-control{
@@ -47,4 +48,12 @@ nav>a{
   margin-left: 50px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+}
+
+.signout {
+  cursor: pointer;
+}
+
+.card a{
+  cursor: pointer;
 }
